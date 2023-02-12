@@ -1,4 +1,10 @@
+import sidebarData from "@/datas/sidebar.data";
 import Head from "next/head";
+import Link from "next/link";
+import {BsList} from 'react-icons/bs';
+import {BiUserCircle} from 'react-icons/bi';
+import SlideBar from "./SlideBar";
+import Navbar from "./Navbar";
 
 interface Props{
     title?:string;
@@ -13,7 +19,13 @@ const Mainlayout=({title,children}:Props)=>{
             <link rel="stylesheet" href="" />
         </Head>
         <main>
-          {children}
+           <SlideBar/>
+                <div className="w-[80%] ml-[18rem]">
+                    <Navbar/>
+                    <div className="pt-16">
+                         {children}
+                    </div>
+                </div>
         </main>
         </>
     )

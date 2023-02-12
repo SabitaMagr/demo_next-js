@@ -1,4 +1,16 @@
+import Container from "@/Components/Container"
 import Mainlayout from "@/layouts/Mainlayout"
+
+const breadCrumb:{title:string,link:string}[]=[
+  {
+    title:'Home',
+    link:'#'
+  },
+  {
+    title:'Dashboard',
+    link:'#'
+  },
+]
 
 const dashboard=()=>{
     return (
@@ -6,9 +18,14 @@ const dashboard=()=>{
             <Mainlayout
               title={'Dashboard'}
             >
-              <div>
+              <Container 
+              breadCrumb={breadCrumb}
+              title={'Dashboard'}
+              >
+              </Container>
+              {/* <div>
                 this is dashboard
-              </div>
+              </div> */}
 
             </Mainlayout>
         </div>
