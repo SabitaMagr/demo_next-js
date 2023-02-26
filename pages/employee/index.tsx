@@ -26,12 +26,7 @@ const Index=()=>{
         <Mainlayout title='employee'>
             <Container 
             breadCrumb={breadCrumb}
-            title="employee">
-                <div className="flex justify-end">
-                    <Link href="/employee/create">
-                        <span className="bg-green-500 text-white hover:bg-green-800 rounded-md px-3 py-2">Add Employee </span>
-                    </Link>
-                </div>
+            title="">
                 <EmployeeTable />
             </Container>
         </Mainlayout>

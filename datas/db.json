@@ -1,0 +1,32 @@
+{
+  "employee": [
+    {
+      "name": "Sabina magar",
+      "email": "sabitathapa9864@gmail.com",
+      "address": "new baneshwor",
+      "phone": "9864996993",
+      "age": "65",
+      "gender": "female",
+      "id": 1677379347363
+    },
+    {
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "address": "kapam",
+      "phone": "9865478559",
+      "age": "45",
+      "gender": "female",
+      "id": 1677424767484
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,12 +1,13 @@
-import EmployeeForm from '@/Components/EmployeeForm'
+import Container from '@/Components/Container'
+import Create from '@/Components/Create'
 import React from 'react'
 
 const create = () => {
   return (
-    <div>
-        <EmployeeForm/>
-    </div>
+    <Create/>
   )
 }
 
 export default create
+
+

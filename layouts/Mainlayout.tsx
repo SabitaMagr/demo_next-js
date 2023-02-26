@@ -5,6 +5,7 @@ import {BsList} from 'react-icons/bs';
 import {BiUserCircle} from 'react-icons/bi';
 import SlideBar from "./SlideBar";
 import Navbar from "./Navbar";
+import { useState } from "react";
 
 interface Props{
     title?:string;
@@ -12,6 +13,7 @@ interface Props{
 }
 
 const Mainlayout=({title,children}:Props)=>{
+    const [toggle,setToggle] =useState<boolean>(false);
     return(
         <>
         <Head>
@@ -19,9 +21,14 @@ const Mainlayout=({title,children}:Props)=>{
             <link rel="stylesheet" href="" />
         </Head>
         <main>
-           <SlideBar/>
-                <div className="w-[80%] ml-[18rem]">
-                    <Navbar/>
+           <SlideBar toggle={toggle}/>
+           <div
+          className={`${
+            !toggle
+              ? "md:ml-[11rem] lg:ml-[14rem] xl:ml-[16.8rem] 2xl:ml-[21rem]"
+              : "ml-[5rem]"
+          } `}
+        >         <Navbar setToggle={setToggle} toggle={toggle}/>
                     <div className="pt-16">
                          {children}
                     </div>

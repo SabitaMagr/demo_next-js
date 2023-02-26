@@ -15,22 +15,22 @@ const sidebarData:SidebarInterface[]=[
     {
         title:'Home',
         icon:<AiFillHome/>,
-        link:'https://react-icons.github.io/react-icons/search?q=contact'
+        link:'/home'
     },
     {
         title:'About',
         icon:<BiMessageSquareAdd/>,
-        link:'https://web.whatsapp.com/'
+        link:'/about'
     },
     {
         title:'Employee',
         icon:<BiUserCircle/>,
-        link:'https://web.whatsapp.com/'
+        link:'/employee'
     },
     {
         title:'Money',
         icon:<FaMoneyBillAlt/>,
-        link:'/contact'
+        link:'/money'
     },
     {
         title:'Contact Us',
