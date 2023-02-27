@@ -7,6 +7,7 @@ interface Props{
 
 export default function Navbar({toggle,setToggle}:Props){
     return (
+        <div className="w-[82%]">
         <div className={`fixed ${!toggle ? " pl-0 ml-[17rem]" : "ml-[5rem]"} p-5 bg-white z-[999999] text-black shadow-md flex justify-between left-0 right-0`}>
             <div className={` ${!toggle ? "ml-10" : "ml-1"} `}>
                 <span onClick={() => setToggle((t) =>!t)}>
@@ -16,6 +17,7 @@ export default function Navbar({toggle,setToggle}:Props){
             <span className="text-xl">Sabita</span>
             <span ><BiUserCircle size={30}/></span>
         </div>
+    </div>
     </div>
     )
 }

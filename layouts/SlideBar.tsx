@@ -7,11 +7,11 @@ interface Props{
 export default function SlideBar({toggle}:Props){
     const router =useRouter();
     return (
-        <div className={`min-h-screen text-white z-50  ${ toggle ? 'w-5%' : 'w-20%'} bg-purple-600 fixed inset-0`}>
+        <div className={`min-h-screen text-white z-50  ${ toggle ? 'w-[5%]' : 'w-[20%]'}  bg-purple-600 fixed inset-0`}>
         <div className="text-white flex justify-center">
-            {!toggle &&
-                <h1 className="text-3xl  pb-2 pt-4 font-bold text-center">Admin</h1>
-            }
+            {!toggle && (
+               <h1 className="text-3xl  pb-2 pt-4 font-bold text-center">Admin</h1>
+            )}
            
         </div>
         <div className="mt-2">

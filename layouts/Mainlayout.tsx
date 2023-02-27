@@ -20,19 +20,19 @@ const Mainlayout=({title,children}:Props)=>{
             <title>{title||'demo'}</title>
             <link rel="stylesheet" href="" />
         </Head>
-        <main>
+        <main className="w-full">
            <SlideBar toggle={toggle}/>
            <div
           className={`${
             !toggle
               ? "md:ml-[11rem] lg:ml-[14rem] xl:ml-[16.8rem] 2xl:ml-[21rem]"
-              : "ml-[5rem]"
+              : "ml-[4rem]"
           } `}
         >         <Navbar setToggle={setToggle} toggle={toggle}/>
                     <div className="pt-16">
                          {children}
                     </div>
-                </div>
+          </div>
         </main>
         </>
     )
